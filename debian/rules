@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+#export DH_VERBOSE=1
+export PYBUILD_NAME=entrypoints
+
+# Debian doesn't have flit:
+export PYBUILD_SYSTEM=custom
+export PYBUILD_CLEAN_ARGS=rm -rf {build_dir}/python{version}/dist-packages
+export PYBUILD_CONFIGURE_ARGS=true
+export PYBUILD_BUILD_ARGS=true
+export PYBUILD_INSTALL_ARGS=mkdir -p {destdir}/usr/lib/python{version}/dist-packages && cp entrypoints.py {destdir}/usr/lib/python{version}/dist-packages && sed -e s/@VERSION@/$(DEB_VERSION_UPSTREAM)/g debian/entrypoints.egg-info.in > {destdir}/usr/lib/python{version}/dist-packages/entrypoints.egg-info
+export PYBUILD_TEST_ARGS_python3 = true
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild

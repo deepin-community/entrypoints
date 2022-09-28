@@ -1,0 +1,2 @@
+Tests: upstreamtestsuite3
+Depends: python3-entrypoints, python3-pytest

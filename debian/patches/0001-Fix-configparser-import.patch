@@ -1,0 +1,25 @@
+From b21b6fe836c7228e9277bf072714b20711f10d90 Mon Sep 17 00:00:00 2001
+From: Julien Puydt <julien.puydt@laposte.net>
+Date: Thu, 28 Jul 2016 15:38:54 +0200
+Subject: Fix configparser import
+
+---
+ entrypoints.py | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+diff --git a/entrypoints.py b/entrypoints.py
+index 526f8df..f78411d 100644
+--- a/entrypoints.py
++++ b/entrypoints.py
+@@ -13,10 +13,7 @@ import sys
+ import warnings
+ import zipfile
+ 
+-if sys.version_info[0] >= 3:
+-    import configparser
+-else:
+-    from backports import configparser
++import configparser
+ 
+ entry_point_pattern = re.compile(r"""
+ (?P<modulename>\w+(\.\w+)*)

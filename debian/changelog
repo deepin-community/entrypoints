@@ -1,0 +1,130 @@
+entrypoints (0.3-8) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Julien Puydt 
+  * Fix d/watch (again).
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 25 Oct 2021 09:51:20 +0200
+
+entrypoints (0.3-7) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control
+    - use the proper team email address
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 24 Aug 2021 23:58:57 -0400
+
+entrypoints (0.3-6) unstable; urgency=medium
+
+  * Fix d/watch.
+  * Bump std-vers to 4.6.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 19 Aug 2021 10:00:24 +0200
+
+entrypoints (0.3-5) unstable; urgency=medium
+
+  [ Julien Puydt ]
+  * Update team mailing list address.
+  * Bump dh compat to 13.
+  * Declare d/rules doesn't require root.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 12 Oct 2020 22:31:14 +0200
+
+entrypoints (0.3-4) unstable; urgency=medium
+
+  * Drop python2 support; Closes: #936484
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 17 Jul 2020 01:35:27 -0400
+
+entrypoints (0.3-3) unstable; urgency=medium
+
+  * Dont run unittests for python2 binary, to reduce pytest rdeps
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 13 Apr 2020 20:33:06 -0400
+
+entrypoints (0.3-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Julien Puydt ]
+  * Bump std-vers to 4.5.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sun, 01 Mar 2020 10:51:34 +0100
+
+entrypoints (0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop upstream patches as they're in this release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 16 Jan 2019 18:33:23 +0100
+
+entrypoints (0.2.3-4) unstable; urgency=medium
+
+  * Team upload.
+  * Add two upstream patches to silent/fix DeprecationWarnings and fix
+    autopkgtests.
+  * Bump debhelper compat level to 12 and use debhelper-compat
+  * Bump standards version to 4.3.0 (no changes)
+  * Enable autopkgtest-pkg-python testsuite
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 07 Jan 2019 10:38:53 +0100
+
+entrypoints (0.2.3-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/changelog: Remove trailing whitespaces
+
+  [ Julien Puydt ]
+  * Point d/watch to /releases instead of /tags.
+  * Bump std-ver to 4.2.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 15 Aug 2018 22:54:08 +0200
+
+entrypoints (0.2.3-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Fix Format URL to correct one
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+  [ Julien Puydt ]
+  * Refresh packaging:
+    - Use my debian.org mail address.
+    - Bump dh compat to 11.
+    - Bump d/watch to version 4.
+    - Bump std-ver to 4.1.5.
+    - Get rid of git-dpm use.
+    - Run upstream test suite in autopkgtest.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 07 Aug 2018 08:07:00 +0200
+
+entrypoints (0.2.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump standards-version to 4.0.0.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Wed, 28 Jun 2017 22:10:42 +0200
+
+entrypoints (0.2.2-2) unstable; urgency=medium
+
+  * Install an egg-info file so pkg_resources finds the module.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sat, 30 Jul 2016 11:15:44 +0200
+
+entrypoints (0.2.2-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #832721)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 28 Jul 2016 15:44:37 +0200
